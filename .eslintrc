@@ -1,0 +1,48 @@
+{
+  "env": {
+  "node": true,
+  "es6": true,
+  "commonjs": true
+},
+"root": true,
+  "parser": "@typescript-eslint/parser",
+  "extends": ["eslint:recommended', 'plugin:@typescript-eslint/recommended"],
+  "parserOptions": {
+  "ecmaVersion": 6,
+  "sourceType": "module",
+  "project": "./tsconfig.json",
+  "ecmaFeatures": {
+    "modules": true,
+    "experimentalObjectRestSpread": true
+  }
+},    "plugins": [
+  "@typescript-eslint",
+  "security"
+],
+  "rules": {
+  "no-console": "warn",
+  "func-names": "off",
+  "no-underscore-dangle": "off",
+  "consistent-return": "off",
+  "jest/expect-expect": "off",
+  "security/detect-object-injection": "off",
+  "no-unused-vars": "error",
+  "@typescript-eslint/indent": [
+    1,
+    4,
+    {
+      "SwitchCase": 1,
+      "ignoredNodes": [
+        "TSTypeParameterInstantiation"
+      ]
+    }
+  ],
+  "no-trailing-spaces":"error",
+  "import/extensions": "off",
+  "class-methods-use-this": 0,
+  "linebreak-style": 0,
+  "max-len": "off",
+  "indent": "off",
+  "jsx-quotes": [ "error", "prefer-single"]
+}
+}

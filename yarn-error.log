@@ -1,0 +1,71 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Anjeev\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add wrangler
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\Anjeev\AppData\Local\Microsoft\WindowsApps;;C:\Users\Anjeev\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Anjeev\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ETIMEDOUT 2606:4700::6810:1423:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1487:16)
+
+npm manifest: 
+  {
+    "name": "workerd1",
+    "version": "0.0.0",
+    "devDependencies": {
+      "@cloudflare/workers-types": "^4.20230307.0",
+      "@types/btoa": "^1.2.3",
+      "@types/lodash": "^4.14.194",
+      "@types/nodemailer": "^6.4.7",
+      "@types/papaparse": "^5.3.7",
+      "@types/uuid": "^9.0.1",
+      "@typescript-eslint/eslint-plugin": "^5.55.0",
+      "@typescript-eslint/parser": "^5.55.0",
+      "better-sqlite3": "^8.0.1",
+      "eslint": "^8.36.0",
+      "typescript": "^4.9.5",
+      "vitest": "^0.29.2",
+      "wrangler": "^2.19.0"
+    },
+    "private": true,
+    "scripts": {
+      "start": "wrangler dev",
+      "deploy": "wrangler publish",
+      "test": "vitest"
+    },
+    "dependencies": {
+      "@hono/zod-validator": "^0.1.2",
+      "@sendgrid/mail": "^7.7.0",
+      "@sentry/browser": "^7.53.1",
+      "@types/node": "^18.15.11",
+      "dayjs": "^1.11.7",
+      "email-validator": "^2.0.4",
+      "helmet": "^6.1.2",
+      "hono": "^3.0.5",
+      "itty-cors": "^0.3.6",
+      "itty-router": "^3.0.11",
+      "itty-router-extras": "^0.4.2",
+      "lodash": "^4.17.21",
+      "nanoid": "^4.0.1",
+      "nodemailer": "^6.9.1",
+      "order-id": "^2.1.2",
+      "papaparse": "^5.4.1",
+      "uuid": "^9.0.0",
+      "zod": "^3.21.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
